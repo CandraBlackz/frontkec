@@ -7,7 +7,7 @@
         <!-- main content -->
         <header class="pt-5 border-bottom bg-light">
             <div class="container pt-md-1">
-                <h1 class="bd-title mt-4 font-weight-bold"><i class="fa fa-book-open" aria-hidden="true"></i> BERITA
+                <h1 class="bd-title mt-4 font-weight-bold"><img src="assets/images/svg/newspapercolour.svg" class="rounded" style="width: 35px"> DETAIL BERITA
                 </h1>
                 <p class="bd-lead">{{ post.title }}</p>
             </div>
@@ -17,11 +17,11 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
-                    <router-link :to="{ name: 'home' }" class="text-decoration-none"><i class="fa fa-home"></i> Home
+                    <router-link :to="{ name: 'home' }" class="text-decoration-none"><i class="fa fa-home"></i> Beranda
                     </router-link>
                 </li>
                 <li class="breadcrumb-item">
-                    <router-link :to="{ name: 'post' }" class="text-decoration-none"><i class="fa fa-book-open"></i>
+                    <router-link :to="{ name: 'post' }" class="text-decoration-none">
                         Berita</router-link>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">{{ post.title }}</li>

@@ -7,7 +7,7 @@
         <!-- main content -->
         <header class="pt-5 border-bottom bg-light">
             <div class="container pt-md-1 pb-md-1">
-                <h1 class="bd-title mt-4 font-weight-bold"><i class="fa fa-bell" aria-hidden="true"></i> AGENDA</h1>
+                <h1 class="bd-title mt-4 font-weight-bold">DETAIL AGENDA</h1>
                 <p class="bd-lead">{{ event.title }}</p>
             </div>
         </header>
@@ -16,11 +16,11 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
-                    <router-link :to="{ name: 'home' }" class="text-decoration-none"><i class="fa fa-home"></i> Home
+                    <router-link :to="{ name: 'home' }" class="text-decoration-none"><i class="fa fa-home"></i> Beranda
                     </router-link>
                 </li>
                 <li class="breadcrumb-item">
-                    <router-link :to="{ name: 'event' }" class="text-decoration-none"><i class="fa fa-bell"></i>
+                    <router-link :to="{ name: 'event' }" class="text-decoration-none">
                         Agenda</router-link>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">{{ event.title }}</li>
@@ -73,7 +73,7 @@
 
 <!-- agenda section -->
                     <div class="title mb-4">
-                        <h4><i class="fa fa-calendar" aria-hidden="true"></i> AGENDA TERBARU</h4>
+                        <h4><img src="assets/images/svg/calendarcolour.svg" class="rounded" style="width: 35px"> AGENDA TERBARU</h4>
                     </div>
 
                     <div v-if="events.length > 0">

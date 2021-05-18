@@ -31,7 +31,7 @@ const router = new VueRouter({
                 import( /* webpackChunkName: "TagShow" */ "@/views/tag/Show")
         },
         {
-            path: '/category/:slug',
+            path: '/kategori/:slug',
             name: 'detail_category',
             component: () =>
                 import( /* webpackChunkName: "CategoryShow" */ "@/views/category/Show")
@@ -43,7 +43,7 @@ const router = new VueRouter({
                 import( /* webpackChunkName: "EventIndex" */ "@/views/event/Index")
         },
         {
-            path: '/event/:slug',
+            path: '/agenda/:slug',
             name: 'detail_event',
             component: () =>
                 import( /* webpackChunkName: "EventShow" */ "@/views/event/Show")
